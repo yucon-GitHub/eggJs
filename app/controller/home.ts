@@ -12,4 +12,28 @@ export default class HomeController extends Controller {
       message: result,
     };
   }
+
+  public async spider() {
+    const { ctx } = this;
+
+    let result: any = await ctx.curl('http://tuijian.hao123.com/hotrank', {
+      content: 'json',
+
+      dataType: 'json'
+    });
+
+    console.log(result);
+
+    ctx.body = {
+      code: 200,
+      data: result.data,
+      message: ""
+    }
+  }
+
+  public async renderStaticHtml() {
+    const { ctx } = this;
+
+    await ctx.render(`/${ctx.params.type}`);
+  }
 }

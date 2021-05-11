@@ -25,6 +25,19 @@ export default (appInfo: EggAppInfo) => {
     agent: false,
   };
 
+  config.view = {
+    defaultViewEngine: 'nunjucks',
+    mapping: {
+      '.html': 'nunjucks'
+    }
+  };
+
+  config.security = {
+    csrf: {
+      enable: false
+    }
+  };
+
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,

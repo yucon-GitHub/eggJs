@@ -1,0 +1,121 @@
+body {
+    font-size: 14px;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+
+    --theme-color: #BCE1DC;
+    --theme-slow-color: #E6F3F1;
+    --theme-dark-color: #009D8D;
+
+    background-image: url("/public/img/logo.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.flex-column-center {
+    align-items: center;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-column-end {
+    align-items: end;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.border {
+    border: 1px solid var(--theme-dark-color);
+}
+
+.m-15 {
+    margin: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bcl-main {
+    background-color: var(--theme-color);
+}
+
+.bcl-main-slow {
+    background-color: var(--theme-slow-color);
+}
+
+.bcl-main-dark {
+    background-color: var(--theme-dark-color);
+}
+
+.bcl-white {
+    background-color: #ffffff;
+}
+
+.cl-white {
+    color: #ffffff;
+}
+
+.cl-main {
+    color: var(--theme-dark-color);
+}
+
+.font-bold {
+    font-weight: bold;
+}

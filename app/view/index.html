@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INDEX</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="/public/css/main.css" rel="stylesheet">
+</head>
+<style>
+  .qa-box { padding: 30px; margin-bottom: 30px; }
+  .qa-box .avatar img {  width: 60px; min-width: 60px; height: 60px; display: block; border-radius: 50%; }
+  .qa-box .qr-code img {  width: 80px; min-width: 80px; height: 80px; display: block; }
+
+  .qa-title { font-size: 24px; }
+  .qa-title .name { position: relative; }
+  .qa-title .name::before { content: ""; width: 30px; height: 30px; transform: rotateZ(45deg)skew(30deg,30deg); background: #ffffff; position: absolute; top: -15px; left: -15px; }
+
+  .qa-subject-name { font-size: 36px; }
+
+  .qa-footer { padding-bottom: 30px; }
+  .qa-footer .text { border-radius: 40px; padding: 10px 30px; font-size: 16px; }
+
+  .qa-box { padding: 30px; margin-bottom: 30px; }
+  .qa-box img {  width: 80px; height: 80px; display: block; }
+  .qa-container { max-width: 1000px; margin: 0 auto; }
+  .qa-container .topic-title { background-color: var(--theme-dark-color); padding: 4px 10px; border-radius: 20px; font-size: 16px; margin-bottom: 20px; }
+  .qa-container .topic-title .sort { border-radius: 50%; width: 20px; height: 20px; color: var(--theme-dark-color); margin-right: 5px; }
+
+  .qa-content { color: var(--theme-dark-color); letter-spacing: 1px; }
+
+  .qa-qr-code { margin-top: 20px; padding: 20px 30px; }
+  .qa-qr-code img { width: 100px; height: 100px; display: block; }
+
+  .qa-option { margin-top: 30px; }
+  .qa-option .title { background-image: url("/public/img/title_bg.png"); background-size: 100%; background-repeat: no-repeat; padding: 5px 30px 10px 30px; font-size: 16px; }
+
+  .qa-answer { letter-spacing: 1px; padding: 20px; }
+  .qa-answer .title { letter-spacing: 2px; color: #000000; }
+</style>
+<body>
+<div class="container flex flex-column flex-between" style="height: 100vh;">
+  <!-- 头部二维码 -->
+  <div class="qa-box flex flex-column-center flex-between bcl-main">
+
+    <div class="flex avatar">
+      <img class="bcl-white mr-10" src="" alt="头像">
+      <div>
+        裂纹刻骨02 <span class="cl-main">萨达阿达</span>
+      </div>
+    </div>
+
+    <div class="flex qr-code">
+      <div class="flex flex-column flex-end mr-10">扫码获取更多学习干活 >></div>
+      <img class="bcl-white" src="" alt="二维码">
+    </div>
+  </div>
+
+  <!-- 科目 -->
+  <div class="qa-title font-bold flex flex-center">
+    <div class="bcl-main-dark cl-white" style="padding: 10px 25px 10px 15px;">2021</div>
+    <div class="bcl-main name" style="padding: 10px 15px 10px 25px;">执业药师考试</div>
+  </div>
+
+  <!-- 标题 -->
+  <div class="qa-subject-name text-center font-bold">
+    <p class="cl-main">药学专业知识（一）</p>
+    <p>《错题强化集》</p>
+  </div>
+
+  <div class="text-center qa-footer">
+    <div class="bcl-main-dark cl-white inline-block text">鸭题库2021药考必修课赠送资料</div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- 头部二维码 -->
+  <div class="qa-box flex flex-end bcl-main">
+    <div class="flex flex-column flex-end mr-10">扫码免费学药考必修课 >></div>
+
+    <img class="bcl-white" src="" alt="二维码">
+  </div>
+
+  <div class="qa-container">
+    <!-- 标题 -->
+    <div class="topic-title inline-block">
+      <div class="flex flex-column-center font-bold cl-white">
+        <!-- 序号 -->
+        <div class="sort text-center bcl-white">1</div>
+        <div>未掌握考点</div>
+      </div>
+    </div>
+
+    <!-- 内容 -->
+    <div class="qa-content">
+      委托加工物资是指企业委托外单位加工的各种材料、商品等物资。
+    </div>
+
+    <!-- 扫码讲解 -->
+    <div class="qa-qr-code border radius bcl-main-slow flex">
+      <img class="border bcl-white" src="" alt="二维码">
+
+      <div class="flex flex-column flex-end ml-10"> << 扫码查看视频讲解</div>
+    </div>
+
+    <!-- 选项 -->
+    <div class="qa-option">
+      <div class="mb-10 font-bold flex flex-column-center">
+        <div class="title cl-white mr-10">相关错题</div>
+        <div>能温菲止咳的药油</div>
+      </div>
+
+      <ul class="cl-main p-15">
+        <li class="mb-10">A. 干将</li>
+        <li class="mb-10">A. 干将</li>
+        <li class="mb-10">A. 干将</li>
+        <li class="mb-10">A. 干将</li>
+      </ul>
+    </div>
+
+    <!-- 参考答案 -->
+    <div class="qa-answer border radius bcl-main-slow">
+      <div>
+        <span class="font-bold title">参考答案</span>
+        A
+      </div>
+
+      <div class="mt-10">
+        <span class="font-bold title">解析：</span>
+        一般纳税企业委托其他单位加工材料收回后直接对外销售的，受托方代收代缴的消费税应计入委托加工物资的成本。委托加工物资收回后用于连续生产的，按规定准予抵扣的，应将代收代缴的消费税记入“应交税费——应交消费税”科目的借方。
+      </div>
+
+      <div class="mt-10">
+        <span class="font-bold title">考题出处：</span>
+        一般纳税企业委托其他单位加工材料收回后直接对外销售的，受托方代收代缴的消费税应计入委托加工物资的成本。委托加工物资收回后用于连续生产的，按规定准予抵扣的，应将代收代缴的消费税记入“应交税费——应交消费税”科目的借方。
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

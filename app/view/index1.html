@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INDEX</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<style>
+  body {
+    page-break-before: always;
+    page-break-after: always;
+    page-break-inside: avoid;
+    font-size: 14px;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+
+    --theme-color: #BCE1DC;
+    --theme-slow-color: #E6F3F1;
+    --theme-dark-color: #009D8D;
+
+    background-image: url("https://resource.oss.yatiku.com/pointPdf/logo.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+  }
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .radius {
+    border-radius: 10px;
+  }
+
+  .border {
+    border: 1px solid #BCE1DC;
+  }
+
+  .m-15 {
+    margin: 15px;
+  }
+
+  .mt-10 {
+    margin-top: 10px;
+  }
+
+  .mr-10 {
+    margin-right: 10px;
+  }
+
+  .ml-10 {
+    margin-left: 10px;
+  }
+
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+
+  .p-15 {
+    padding: 15px;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .bcl-main {
+    background-color: #BCE1DC;
+  }
+
+  .bcl-main-slow {
+    background-color: #E6F3F1;
+  }
+
+  .bcl-main-dark {
+    background-color: #009D8D;
+  }
+
+  .bcl-white {
+    background-color: #ffffff;
+  }
+
+  .cl-white {
+    color: #ffffff;
+  }
+
+  .cl-main {
+    color: #009D8D;
+  }
+
+  .font-bold {
+    font-weight: bold;
+  }
+  .qa-box { padding: 30px; margin-bottom: 30px; }
+  .avatar { background-image: url("/public/img/avatar_bg.png"); background-size: 100%; padding-right: 30px; background-repeat: no-repeat; }
+  .avatar img {  min-width: 60px; width: 60px; height: 60px; display: block; border-radius: 50%; }
+  .qa-box .qr-code { float: right; }
+  .qa-box .qr-code img {  min-width: 80px; width: 80px; height: 80px; display: block; }
+
+  .qa-subject-name { font-size: 36px; }
+
+  .qa-footer { padding-bottom: 30px; }
+  .qa-footer .text { border-radius: 40px; padding: 10px 30px; font-size: 16px; margin-top: 100px; }
+
+  .question-list .qa-box { padding: 30px; margin-bottom: 30px; }
+  .question-list .qa-box img {  width: 80px; height: 80px; display: block; }
+  .question-list .qa-container { max-width: 1000px; margin: 0 auto; }
+  .question-list .qa-container .topic-title { background-color: var(--theme-dark-color); padding: 4px 10px; border-radius: 20px; font-size: 16px; margin-bottom: 20px; }
+  .question-list .qa-container .topic-title .sort { border-radius: 50%; width: 20px; height: 20px; margin-right: 5px; }
+
+  .question-list .qa-content { letter-spacing: 1px; }
+
+  .question-list .qa-qr-code { margin-top: 20px; padding: 20px 30px; }
+  .question-list .qa-qr-code img { width: 100px; height: 100px; display: block; }
+
+  .question-list .qa-option { margin-top: 30px; }
+  .question-list .qa-option .title { background-image: url("https://resource.oss.yatiku.com/pointPdf/title_bg.png"); background-size: 100%; background-repeat: no-repeat; padding: 5px 30px 10px 30px; font-size: 16px; }
+
+  .question-list .qa-answer { letter-spacing: 1px; padding: 20px; }
+  .question-list .qa-answer .title { letter-spacing: 2px; color: #000000; }
+
+  .qa-answer-strengthen { overflow: hidden; }
+  .qa-answer-strengthen .qa-answer:nth-child(odd) { background-color: #BCE1DC; }
+</style>
+<body>
+<div class="container flex flex-column flex-between" style="height: 1330px;">
+  <!-- 头部二维码 -->
+  <div class="inline-block avatar p-15">
+    <div class="inline-block">
+      <img class="bcl-white mr-10" src="http://wx.qlogo.cn/mmhead/icXtjp9jsR5TLN5eG1C4dm5ia7XZcvTgylyOk9cnWwWxcBsZXHsElQGg/0" alt="头像">
+    </div>
+    <div class="inline-block">
+      <p class="font-bold">赏月-13622505659</p>
+      <p class="cl-main">学员专属资料</p>
+    </div>
+  </div>
+
+  <!-- 标题 -->
+  <div class="qa-subject-name text-center font-bold">
+    <p class="cl-main">药学专业知识（二）</p>
+    <p>《错题强化集》</p>
+  </div>
+
+  <div class="text-center index-qr-code" style="margin: 60px 0;">
+    <p style="font-size: 18px;">扫码免费学必修课</p>
+    <img class="border bcl-white" src="https://resource.yatiku.com/file/adminwxCodeImage/1598869722339_2978.png" alt="二维码" style="width: 220px; height: 220px;">
+  </div>
+
+  <div class="text-center qa-footer">
+    <div class="bcl-main-dark cl-white inline-block text">鸭题库2021药考必修课赠送资料</div>
+  </div>
+</div>
+<div class="container question-list">
+  <!-- 头部二维码 -->
+  <div class="qa-box bcl-main">
+    <div style="float: right;">
+      <div class="inline-block flex-column flex-end mr-10" style="vertical-align: bottom;">扫码免费学药考必修课 >></div>
+      <div class="inline-block">
+        <img class="bcl-white" src="https://resource.yatiku.com/file/adminwxCodeImage/1598869722339_2978.png" alt="二维码" />
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="qa-container p-15" style="margin-top: 50px;">
+    <!-- 标题 -->
+    <div class="topic-title inline-block bcl-main-dark">
+      <div class="font-bold cl-white">
+        <!-- 序号 -->
+        <div class="sort text-center bcl-white cl-main inline-block">1</div>
+        <div class="inline-block">未掌握考点</div>
+      </div>
+    </div>
+
+    <!-- 内容 -->
+    <div class="qa-content cl-main">
+      1.内容：委托加工物资是指企业委托外单位加工的各种材料、商品等物资。2.企业委托外单位加工物资的成本包括：（1）加工中实际耗用物资的成本；（2）支付的加工费用及应负担的运杂费等；（3）支付的税费。
+    </div>
+
+    <!-- 扫码讲解 -->
+
+    <!-- 选项 -->
+    <div class="qa-option">
+      <div class="mb-10 font-bold">
+        <div class="title cl-white mr-10 inline-block">相关错题</div>
+      </div>
+      <p>1) 下列各项中，计入委托加工物资成本的有（）。</p>
+      <ul class="cl-main p-15">
+        <li class="mb-10">A. 委托加工物资支付的加工费</li>
+        <li class="mb-10">B. 委托加工物资耗用的物资成本</li>
+        <li class="mb-10">C. 委托加工物资收回后连续加工由受托方代收代缴的消费税</li>
+        <li class="mb-10">D. 委托加工物资收回后直接销售由受托方代收代缴的消费税</li>
+      </ul>
+      <!-- 参考答案 -->
+      <div class="qa-answer border radius bcl-main-slow">
+        <div>
+          <span class="font-bold">参考答案</span>
+          A
+          B
+          D
+        </div>
+
+        <div class="mt-10">
+          <span class="font-bold">解析：</span>
+          选项C，委托加工物资收回后连续加工，按规定准予抵扣的，应按已由受托方代收代缴的消费税，借记“应交税费——应交消费税”科目，贷记“应付账款”、“银行存款”等科目。
+        </div>
+      </div>
+    </div>
+
+    <!-- 强化练习题 -->
+    <div class="qa-option">
+      <div class="mb-10 font-bold">
+        <div class="title cl-white mr-10 inline-block">强化练习题</div>
+      </div>
+
+      <div>
+        <p>1) 一般纳税企业委托其他单位加工材料收回后直接对外销售的，其发生的下列支出中，应计入委托加工物资成本的有（）</p>
+
+        <ul class="cl-main p-15">
+          <li class="mb-10">A. 加工费</li>
+          <li class="mb-10">B. 支付的增值税税额</li>
+          <li class="mb-10">C. 由委托方承担的往返运杂费</li>
+          <li class="mb-10">D. 受托方代收代缴的消费税</li>
+        </ul>
+
+        <!-- 参考答案 -->
+        <div class="qa-answer border radius bcl-main-slow">
+          <div>
+            <span class="font-bold">参考答案</span>
+            A
+            C
+            D
+          </div>
+
+          <div class="mt-10">
+            <span class="font-bold">解析：</span>
+            本题考核的是委托加工物资的知识点，一般纳税企业委托其他单位加工材料收回后直接对外销售的，受托方代收代缴的消费税应计入委托加工物资的成本。委托加工物资收回后用于连续生产的，按规定准予抵扣的，应将代收代缴的消费税记入“应交税费——应交消费税”科目的借方。增值税不能计入一般纳税企业委托加工物资的成本。
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>2) 企业委托加工应税消费品，如果收回后用于连续生产，委托方对于尚未支付的受托方代收代缴的消费税的会计处理，正确的是（）。</p>
+
+        <ul class="cl-main p-15">
+          <li class="mb-10">A. 借记“原材料”科目，贷记“银行存款”科目</li>
+          <li class="mb-10">B. 借记“应交税费——应交消费税”科目，贷记“应付账款”科目</li>
+          <li class="mb-10">C. 借记“委托加工物资”科目，贷记”银行存款”科目</li>
+          <li class="mb-10">D. 借记“委托加工物资”科目，贷记“应付账款”科目</li>
+        </ul>
+
+        <!-- 参考答案 -->
+        <div class="qa-answer border radius bcl-main-slow">
+          <div>
+            <span class="font-bold">参考答案</span>
+            B
+          </div>
+
+          <div class="mt-10">
+            <span class="font-bold">解析：</span>
+            企业如有应交消费税的委托加工物资，一般应由受托方代收代缴税款。委托加工物资收回后用于连续生产的，按规定准予抵扣的，应按已由受托方代收代缴的消费税，借记”应交税费——应交消费税“科目，贷记“应付账款”、”银行存款”等科目。
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>3) 可以委托加工的是</p>
+
+        <ul class="cl-main p-15">
+          <li class="mb-10">A. 葡萄糖注射液</li>
+          <li class="mb-10">B. 阿莫西林胶囊</li>
+          <li class="mb-10">C. 刺五加注射液</li>
+          <li class="mb-10">D. 白蛋白注射液</li>
+        </ul>
+
+        <!-- 参考答案 -->
+        <div class="qa-answer border radius bcl-main-slow">
+          <div>
+            <span class="font-bold">参考答案</span>
+            A
+            B
+          </div>
+
+          <div class="mt-10">
+            <span class="font-bold">解析：</span>
+            麻醉药品、精神药品、易制毒化学品、医疗用毒性药品、生物制品、多组分生化药品、中药注射剂、原料药和中药提取物不得委托生产。
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>4) 某一般纳税企业委托外单位加工一批消费税应税消费品，材料成本50万元，加工费12万元（不含税），受托方增值税税率为13%，受托方代收代缴消费税2万元。该批材料加工后委托方直接出售，则该批材料加工完毕入库时的成本为（）万元。</p>
+
+        <ul class="cl-main p-15">
+          <li class="mb-10">A. 64</li>
+          <li class="mb-10">B. 62</li>
+          <li class="mb-10">C. 58.5</li>
+          <li class="mb-10">D. 70.5</li>
+        </ul>
+
+        <!-- 参考答案 -->
+        <div class="qa-answer border radius bcl-main-slow">
+          <div>
+            <span class="font-bold">参考答案</span>
+            A
+          </div>
+
+          <div class="mt-10">
+            <span class="font-bold">解析：</span>
+            材料加工完毕入库时的成本＝50＋12＋2＝64（万元）。
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>5) 委托加工物资收回后用于连续生产应税消费品的，委托方应将交纳的消费税计入委托加工物资的成本。（）</p>
+
+        <ul class="cl-main p-15">
+          <li class="mb-10">A. 对</li>
+          <li class="mb-10">B. 错</li>
+        </ul>
+
+        <!-- 参考答案 -->
+        <div class="qa-answer border radius bcl-main-slow">
+          <div>
+            <span class="font-bold">参考答案</span>
+            B
+          </div>
+
+          <div class="mt-10">
+            <span class="font-bold">解析：</span>
+            委托其他单位加工材料收回后直接对外销售的，受托方代收代交的消费税应计入委托加工物资的成本。委托加工物资收回后用于连续生产应税消费品的，应按代收代交的消费税记入“应交税费——应交消费税”科目的借方。<br />该题针对“委托加工物资的核算”知识点进行考核。<br />
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>6) 应交消费税的委托加工物资收回后用于连续生产应税消费品，按规定由受托方代扣代缴的消费税，应当计入（ ）。</p>
+
+        <ul class="cl-main p-15">
+          <li class="mb-10">A. 委托加工物资</li>
+          <li class="mb-10">B. 应交税费</li>
+          <li class="mb-10">C. 主营业务成本</li>
+          <li class="mb-10">D. 生产成本</li>
+        </ul>
+
+        <!-- 参考答案 -->
+        <div class="qa-answer border radius bcl-main-slow">
+          <div>
+            <span class="font-bold">参考答案</span>
+            B
+          </div>
+
+          <div class="mt-10">
+            <span class="font-bold">解析：</span>
+            委托加工物资收回后直接用于销售的，由受托方代扣代交的消费税应计入委托加工物资成本；如果收回的委托加工物资用于连续生产应税消费品，按规定应将由受托方代扣代交的消费税计入“应交税费——应交消费税”科目的借方，用以抵扣连续生产完工后的应税消费品销售时所负担的消费税。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-container p-15" style="margin-top: 50px;">
+    <!-- 标题 -->
+    <div class="topic-title inline-block bcl-main-dark">
+      <div class="font-bold cl-white">
+        <!-- 序号 -->
+        <div class="sort text-center bcl-white cl-main inline-block">2</div>
+        <div class="inline-block">未掌握考点</div>
+      </div>
+    </div>
+
+    <!-- 内容 -->
+    <div class="qa-content cl-main">
+      1.购入的存货，其成本包括：买价、运杂费（包括运输费、装卸费、保险费、包装费、仓储费等）、运输途中的合理损耗、入库前的挑选整理费用以及按规定应计入成本的税费和其他费用。2.自制的存货，其成本包括直接材料、直接人工和制造费用等的各项实际支出。3.委托外单位加工完成的存货，其成本包括实际耗用的原材料或者半成品、加工费、装卸费、保险费、委托加工的往返运输费等费用以及按规定应计入成本的税费。4.下列费用不应计入存货成本，应在其发生时计入当期损益：（1）非正常消耗的直接材料、直接人工和制造费用；（2）仓储费用，指企业在存货采购入库后发生的储存费用；（3）不能归属于使存货达到目前场所和状态的其他支出。
+    </div>
+
+    <!-- 扫码讲解 -->
+    <div class="qa-qr-code radius">
+      <div class="inline-block">
+        <img class="border bcl-white" src="https://resource.oss.yatiku.com/img/teachingAffairs/point/80008000-存货概述.png" alt="二维码" />
+      </div>
+      <div class="inline-block ml-10" style="vertical-align: bottom;"> << 扫码查看名师讲解</div>
+    </div>
+
+    <!-- 选项 -->
+    <div class="qa-option">
+      <div class="mb-10 font-bold">
+        <div class="title cl-white mr-10 inline-block">相关错题</div>
+      </div>
+      <p>1) 某企业采用先进先出法计算发出甲材料的成本，2020年2月1日，结存甲材料200公斤，每公斤实际成本100元；2月10日购入甲材料300公斤，每公斤实际成本110元；2月15日发出甲材料400公斤。2月末，库存甲材料的实际成本为（）元。</p>
+      <ul class="cl-main p-15">
+        <li class="mb-10">A. 10000</li>
+        <li class="mb-10">B. 10500</li>
+        <li class="mb-10">C. 10600</li>
+        <li class="mb-10">D. 11000</li>
+      </ul>
+      <!-- 参考答案 -->
+      <div class="qa-answer border radius bcl-main-slow">
+        <div>
+          <span class="font-bold">参考答案</span>
+          D
+        </div>
+
+        <div class="mt-10">
+          <span class="font-bold">解析：</span>
+          剩余的甲材料的数量=200+300-400=100（公斤），剩余的甲材料都是2月10日购入的，所以月末甲材料的实际成本100×110=11000（元）。
+        </div>
+      </div>
+      <p>2) 某企业为增值税一般纳税人，本期购入一批商品100千克，进货价格为100万元，增值税进项税额为13万元。所购商品到达后验收发现商品短缺25%，其中合理损失15%，另10%的短缺无法查明原因。该批商品的单位成本为（）万元。</p>
+      <ul class="cl-main p-15">
+        <li class="mb-10">A. 1</li>
+        <li class="mb-10">B. 1.4</li>
+        <li class="mb-10">C. 1.2</li>
+        <li class="mb-10">D. 1.25</li>
+      </ul>
+      <!-- 参考答案 -->
+      <div class="qa-answer border radius bcl-main-slow">
+        <div>
+          <span class="font-bold">参考答案</span>
+          C
+        </div>
+
+        <div class="mt-10">
+          <span class="font-bold">解析：</span>
+          该批商品的单位成本=（100-100×10%）÷（100-100×25%）=1.2（万元）。
+        </div>
+      </div>
+      <p>3) 下列各项中，应计入企业存货成本的有（）。</p>
+      <ul class="cl-main p-15">
+        <li class="mb-10">A. 存货加工过程中发生的直接人工</li>
+        <li class="mb-10">B. 为特定客户设计产品的可直接确定的设计费用</li>
+        <li class="mb-10">C. 购买存货时支付的进口关税</li>
+        <li class="mb-10">D. 存货采购运输中发生的定额内合理损耗</li>
+      </ul>
+      <!-- 参考答案 -->
+      <div class="qa-answer border radius bcl-main-slow">
+        <div>
+          <span class="font-bold">参考答案</span>
+          A
+          B
+          C
+          D
+        </div>
+
+        <div class="mt-10">
+          <span class="font-bold">解析：</span>
+          存货成本包括采购成本、加工成本和其他成本。选项A，存货加工过程中发生的直接人工属于存货的加工成本；选项B，企业为特定客户设计产品所发生的、可直接确定的设计费用，属于存货的其他成本；选项C，购买存货时支付的进口关税属于存货的采购成本；选项D，存货采购运输中发生的定额内合理损耗属于存货的采购成本。
+        </div>
+      </div>
+    </div>
+
+    <!-- 强化练习题 -->
+    <div class="qa-option">
+      <div class="mb-10 font-bold">
+        <div class="title cl-white mr-10 inline-block">强化练习题</div>
+      </div>
+
+      <div>
+        <p>1) 下列税金中，不应计入存货成本的是（）</p>
+
+        <ul class="cl-main p-15">
+          <li class="mb-10">A. 一般纳税企业进口原材料支付的关税</li>
+          <li class="mb-10">B. 一般纳税企业购进原材料支付的增值税</li>
+          <li class="mb-10">C. 小规模纳税企业购进原材料支付的增值税</li>
+          <li class="mb-10">D. 一般纳税企业进口应税消费品支付的消费税</li>
+        </ul>
+      </div>
+      <div>
+        <p>2) 某增值税一般纳税人因管理不善导致一批库存材料被盗，该批原材料实际成本为20000元，保险公司赔偿11600元。该企业购入材料的增值税税率为13%，该批毁损原材料造成的非常损失净额为（）元。</p>
+
+        <ul class="cl-main p-15">
+          <li class="mb-10">A. 8400</li>
+          <li class="mb-10">B. 19600</li>
+          <li class="mb-10">C. 9200</li>
+          <li class="mb-10">D. 11000</li>
+        </ul>
+      </div>
+
+      <div class="border radius bcl-main-slow qa-answer-strengthen">
+        <!-- 参考答案 -->
+        <div class="qa-answer">
+          <p class="font-bold">强化练习题</p>
+          <div>
+            <span class="font-bold">参考答案</span>
+            D
+          </div>
+
+          <div class="mt-10">
+            <span class="font-bold">解析：</span>
+            该批毁损原材料造成的非常损失净额=20000+20000×13%-11600=11000（元）。
+          </div>
+        </div>
+        <!-- 参考答案 -->
+        <div class="qa-answer">
+          <div>
+            <span class="font-bold">参考答案</span>
+            D
+          </div>
+
+          <div class="mt-10">
+            <span class="font-bold">解析：</span>
+            该批毁损原材料造成的非常损失净额=20000+20000×13%-11600=11000（元）。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
